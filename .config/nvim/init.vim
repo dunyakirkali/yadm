@@ -14,37 +14,7 @@ set noexpandtab
 set smarttab
 set cindent
 set list
-set listchars=tab:>·,trail:·
 "}
-
-" encoding related {
-set enc=utf-8
-set fenc=utf-8
-set termencoding=utf-8
-set fileencodings=utf-8,latin1,default
-"}
-
-" folding related {
-set foldcolumn=0
-set foldmethod=indent
-set foldnestmax=100
-set nofoldenable
-set foldlevel=1
-"}
-
-" coloring related {
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " True gui colors in terminal
-" set background=dark
-" set t_Co=256
-" set termguicolors
-"}
-
-" show syntax {
-syntax enable
-"}
-
-" TextEdit might fail if hidden is not set.
-set hidden
 
 " Some servers have issues with backup files, see #649.
 set nobackup
@@ -72,6 +42,7 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-sensible'
 
 call plug#end()
 
@@ -81,20 +52,11 @@ let mapleader = " "
 noremap <leader>t :NERDTreeToggle<CR>
 noremap <leader>f :Files<CR>
 noremap <leader>s :Ag<CR>
-noremap <leader>! :terminal<CR>
 noremap <leader>q :q<cr>
 
 nmap <Up>    <Nop>
 nmap <Down>  <Nop>
 nmap <Left>  <Nop>
 nmap <Right> <Nop>
-map $ <Nop>
-map ^ <Nop>
-map { <Nop>
-map } <Nop>
-noremap K     {
-noremap J     }
-noremap H     ^
-noremap L     $
 
 let NERDTreeMapOpenInTab='\r'
