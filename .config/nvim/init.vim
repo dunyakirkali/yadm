@@ -33,9 +33,10 @@ set foldlevel=1
 "}
 
 " coloring related {
-set background=dark
-set t_Co=256
-set termguicolors
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " True gui colors in terminal
+" set background=dark
+" set t_Co=256
+" set termguicolors
 "}
 
 " show syntax {
