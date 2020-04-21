@@ -1,8 +1,10 @@
 set nocompatible
-set shell=/usr/local/bin/zsh      " Prefer zsh for shell-related tasks
+set shell=/usr/local/bin/fish      " Prefer zsh for shell-related tasks
 
 " Enable relative line numbers
 set number relativenumber
+
+set clipboard+=unnamed
 
 " tab related {
 set shiftwidth=2
@@ -33,6 +35,7 @@ set foldlevel=1
 " coloring related {
 set background=dark
 set t_Co=256
+set termguicolors
 "}
 
 " show syntax {
@@ -67,17 +70,30 @@ Plug 'jremmen/vim-ripgrep'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
 " Mappings
 let mapleader = " "
 
-noremap <leader>h :wincmd h<CR>
-noremap <leader>j :wincmd j<CR>
-noremap <leader>k :wincmd k<CR>
-noremap <leader>l :wincmd h<CR>
 noremap <leader>t :NERDTreeToggle<CR>
 noremap <leader>f :Files<CR>
-noremap <leader>s :Rg<CR>
+noremap <leader>s :Ag<CR>
 noremap <leader>! :terminal<CR>
+noremap <leader>q :q<cr>
+
+nmap <Up>    <Nop>
+nmap <Down>  <Nop>
+nmap <Left>  <Nop>
+nmap <Right> <Nop>
+map $ <Nop>
+map ^ <Nop>
+map { <Nop>
+map } <Nop>
+noremap K     {
+noremap J     }
+noremap H     ^
+noremap L     $
+
+let NERDTreeMapOpenInTab='\r'
