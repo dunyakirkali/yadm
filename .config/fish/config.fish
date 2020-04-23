@@ -5,3 +5,4 @@ source /usr/local/opt/asdf/asdf.fish
 alias vim='nvim'
 alias ls='exa'
 
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
