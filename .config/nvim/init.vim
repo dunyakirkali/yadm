@@ -16,6 +16,12 @@ set cindent
 set list
 "}
 
+" color {
+set t_Co=256
+set background=dark
+set termguicolors
+"}
+
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
@@ -31,6 +37,8 @@ set updatetime=50
 call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mhinz/vim-startify'
+Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-commentary'
@@ -60,3 +68,10 @@ nmap <Left>  <Nop>
 nmap <Right> <Nop>
 
 let NERDTreeMapOpenInTab='\r'
+
+colorscheme gruvbox
+
+" lightline
+let g:lightline = {
+      \ 'colorscheme': 'gruvbox',
+\ }
