@@ -1,5 +1,6 @@
 tap "homebrew/cask"
 tap "heroku/brew"
+tap "homebrew/cask-fonts"
 
 cask_args appdir: "/Applications"
 
@@ -36,3 +37,4 @@ cask "spotify"        # Spotify is a digital music service that gives you access
 cask "notion"         # Too many tools? Too much chaos? With Notion, all your work is in one place
 # cask "trello"
 # cask "firefox"
+cask "font-inconsolata"
