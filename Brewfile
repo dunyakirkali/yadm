@@ -31,6 +31,7 @@ cask "fork"           # Fork - a fast and friendly git client for Mac and Window
 cask "google-chrome"  # Continue your browsing experience from desktop to phone on Chrome
 cask "iterm2"         # iTerm2 is a replacement for Terminal and the successor to iTerm
 cask "proxyman"       # Modern and Delightful HTTP Debugging Proxy
+cask "postico"        # A Modern PostgreSQL Client for the Mac
 cask "slack"          # Slack is where work flows
 cask "spectacle"      # Move and resize windows with ease
 cask "spotify"        # Spotify is a digital music service that gives you access to millions of songs
