@@ -1,38 +1,3 @@
-set nocompatible
-set shell=/usr/local/bin/fish      " Prefer zsh for shell-related tasks
-
-" Enable relative line numbers
-set number relativenumber
-
-set clipboard+=unnamed
-
-" tab related {
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
-set noexpandtab
-set smarttab
-set cindent
-set list
-"}
-
-" color {
-set t_Co=256
-set background=dark
-set termguicolors
-"}
-
-" Some servers have issues with backup files, see #649.
-set nobackup
-set nowritebackup
-
-" Give more space for displaying messages.
-set cmdheight=2
-
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-" delays and poor user experience.
-set updatetime=50
-
 " Plugins
 call plug#begin('~/.vim/plugged')
 
@@ -51,8 +16,46 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-sensible'
+Plug 'slashmili/alchemist.vim'
 
 call plug#end()
+
+" No backwards compatibility BS
+set nocompatible
+
+" Prefer fish for shell-related tasks
+set shell=/usr/local/bin/fish
+
+" Enable relative line numbers
+set number relativenumber
+
+set clipboard+=unnamed
+
+" tab related {
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
+set noexpandtab
+set smarttab
+set cindent
+set list
+"}
+
+" color {
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set termguicolors
+"}
+
+" Some servers have issues with backup files, see #649.
+set nobackup
+set nowritebackup
+
+" Give more space for displaying messages.
+set cmdheight=2
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=50
 
 " Mappings
 let mapleader = " "
