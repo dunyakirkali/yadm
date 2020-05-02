@@ -4,7 +4,7 @@ tap "homebrew/cask-fonts"
 
 cask_args appdir: "/Applications"
 
-brew "yadm"
+brew "yadm"           # Yet Another Dotfile Manager
 brew "asdf"           # Manage multiple runtime versions with a single CLI tool
 brew "neovim"         # hyperextensible Vim-based text editor
 brew "fish"           # Finally, a command line shell for the 90s
@@ -18,7 +18,6 @@ brew "htop"           # htop - an interactive process viewer for Unix
 brew "fzf"            # A command-line fuzzy finder
 brew "git-lfs"        # An open source Git extension for versioning large files
 brew "fd"             # A simple, fast and user-friendly alternative to 'find'
-# brew "sd"
 brew "hyperfine"      # A command-line benchmarking tool
 brew "imagemagick"    # Use ImageMagick® to create, edit, compose, and convert bitmap images. Resize an image, crop it, change its shades and colors, add captions, and more
 
@@ -36,6 +35,3 @@ cask "slack"          # Slack is where work flows
 cask "spectacle"      # Move and resize windows with ease
 cask "spotify"        # Spotify is a digital music service that gives you access to millions of songs
 cask "notion"         # Too many tools? Too much chaos? With Notion, all your work is in one place
-# cask "trello"
-# cask "firefox"
-cask "font-inconsolata"
