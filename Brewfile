@@ -25,6 +25,7 @@ brew "fzf"            # A command-line fuzzy finder
 brew "git-lfs"        # An open source Git extension for versioning large files
 brew "fd"             # A simple, fast and user-friendly alternative to 'find'
 brew "hyperfine"      # A command-line benchmarking tool
+brew "gpg"
 
 cask "vlc"            # VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols
 cask "bloomrpc"       # GUI Client for GRPC Services
