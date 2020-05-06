@@ -5,6 +5,7 @@ tap "homebrew/services"
 tap "mas-cli/tap"
 tap "heroku/brew"
 tap "homebrew/cask-fonts"
+tap "browsh-org/homebrew-browsh"
 
 cask_args appdir: "/Applications"
 
@@ -37,6 +38,7 @@ cask "postico"        # A Modern PostgreSQL Client for the Mac
 cask "slack"          # Slack is where work flows
 cask "spotify"        # Spotify is a digital music service that gives you access to millions of songs
 cask "notion"         # Too many tools? Too much chaos? With Notion, all your work is in one place
+cask "firefox"
 
 mas "Xcode", id: 497799835
 mas "Magnet", id: 441258766

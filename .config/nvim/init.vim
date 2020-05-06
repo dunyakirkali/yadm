@@ -73,6 +73,7 @@ nmap <Left>  <Nop>
 nmap <Right> <Nop>
 
 let NERDTreeMapOpenInTab='\r'
+let NERDTreeShowHidden=1
 
 colorscheme gruvbox
 
