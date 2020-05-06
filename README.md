@@ -5,3 +5,4 @@
 - Install Homebrew
 - Add SSH key to GitHub
 - Install yadm via brew
+- Install vim-plug
