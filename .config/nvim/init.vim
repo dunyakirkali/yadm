@@ -19,6 +19,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-sensible'
 Plug 'slashmili/alchemist.vim'
+Plug 'dag/vim-fish'
 
 call plug#end()
 

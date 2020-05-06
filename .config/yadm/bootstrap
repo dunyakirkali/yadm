@@ -1,16 +1,16 @@
-#!/bin/sh
+#!/usr/bin/env fish
 
-if [ -f "$HOME/.Brewfile" ]; then
+if test -e ~/Brewfile
 	echo "Updating homebrew bundle"
-	brew bundle --global
-fi
+	brew bundle --file ~/Brewfile
+end
 
-if [ -d "$HOME/.iterm2" ]; then
+if test -d ~/.config/iterm2
 	echo "Setting iTerm preference folder"
-	defaults write com.googlecode.iterm2 PrefsCustomFolder "$HOME/.iterm2"
-fi
+	defaults write com.googlecode.iterm2 PrefsCustomFolder "~/.config/iterm2"
+end
 
-if command -v vim >/dev/null 2>&1; then
-	echo "Bootstraping Vim"
-	vim '+PlugInstall'
-fi
+# if command -v vim >/dev/null 2>&1; then
+# 	echo "Bootstraping Vim"
+# 	vim '+PlugInstall'
+# fi
