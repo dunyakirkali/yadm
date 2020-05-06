@@ -43,3 +43,4 @@ cask "firefox"
 mas "Xcode", id: 497799835
 mas "Magnet", id: 441258766
 mas "1Password 7", id: 1333542190
+mas "Spark", id: 1176895641
