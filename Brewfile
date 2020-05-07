@@ -10,6 +10,7 @@ tap "browsh-org/homebrew-browsh"
 cask_args appdir: "/Applications"
 
 brew "yadm"           # Yet Another Dotfile Manager
+brew "ag"
 brew "mas"
 brew "asdf"           # Manage multiple runtime versions with a single CLI tool
 brew "neovim"         # hyperextensible Vim-based text editor
