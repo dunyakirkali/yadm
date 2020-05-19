@@ -40,6 +40,7 @@ cask "slack"          # Slack is where work flows
 cask "spotify"        # Spotify is a digital music service that gives you access to millions of songs
 cask "notion"         # Too many tools? Too much chaos? With Notion, all your work is in one place
 cask "firefox"
+# cask "font-inconsolata"
 
 mas "Xcode", id: 497799835
 mas "Magnet", id: 441258766

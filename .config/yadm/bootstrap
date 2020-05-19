@@ -27,3 +27,10 @@ asdf plugin add python
 asdf plugin add redis
 asdf plugin add ruby
 asdf plugin add rust
+
+# fish
+## install fisher
+curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+
+## install fisher plugins
+fisher add edc/bass
