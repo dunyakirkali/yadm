@@ -6,6 +6,7 @@ tap "mas-cli/tap"
 tap "heroku/brew"
 tap "homebrew/cask-fonts"
 tap "browsh-org/homebrew-browsh"
+tap "dwarvesf/homebrew-tap"
 
 cask_args appdir: "/Applications"
 
@@ -42,6 +43,7 @@ cask "spotify"        # Spotify is a digital music service that gives you access
 cask "notion"         # Too many tools? Too much chaos? With Notion, all your work is in one place
 cask "firefox"
 # cask "font-inconsolata"
+cask "vimmotion"
 
 mas "Xcode", id: 497799835
 mas "Magnet", id: 441258766
