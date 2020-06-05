@@ -74,6 +74,9 @@ nmap <Down>  <Nop>
 nmap <Left>  <Nop>
 nmap <Right> <Nop>
 
+nmap <leader>gd <Plug>(coc-definition)
+nmap <leader>gr <Plug>(coc-references)
+
 let NERDTreeMapOpenInTab='\r'
 let NERDTreeShowHidden=1
 
