@@ -21,6 +21,8 @@ Plug 'tpope/vim-sensible'
 Plug 'slashmili/alchemist.vim'
 Plug 'dag/vim-fish'
 Plug 'tpope/vim-fugitive'
+Plug 'wakatime/vim-wakatime'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
@@ -50,9 +52,12 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set termguicolors
 "}
 
-" Some servers have issues with backup files, see #649.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Files, backups and undo
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nobackup
-set nowritebackup
+set nowb
+set noswapfile
 
 " Give more space for displaying messages.
 set cmdheight=2
@@ -77,8 +82,16 @@ nmap <Right> <Nop>
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
 
+" NARDTree
 let NERDTreeMapOpenInTab='\r'
 let NERDTreeShowHidden=1
+let NERDTreeShowBookmarks=1
+let NERDTreeChDirMode=0
+let NERDTreeQuitOnOpen=1
+let NERDTreeMouseMode=2
+let NERDTreeShowHidden=1
+let NERDTreeKeepTreeInNewTab=0
+let g:nerdtree_tabs_open_on_gui_startup=0
 
 colorscheme gruvbox
 
