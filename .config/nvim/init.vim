@@ -23,6 +23,9 @@ Plug 'dag/vim-fish'
 Plug 'tpope/vim-fugitive'
 Plug 'wakatime/vim-wakatime'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'uarun/vim-protobuf'
+Plug 'junegunn/goyo.vim'
+Plug 'tpope/vim-sleuth'
 
 call plug#end()
 
@@ -36,16 +39,6 @@ set shell=/usr/local/bin/fish
 set number relativenumber
 
 set clipboard+=unnamed
-
-" tab related {
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
-set noexpandtab
-set smarttab
-set cindent
-set list
-"}
 
 " color {
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -73,6 +66,7 @@ noremap <leader>t :NERDTreeToggle<CR>
 noremap <leader>f :Files<CR>
 noremap <leader>s :Ag<CR>
 noremap <leader>q :q<cr>
+nmap <leader>gf :Goyo<CR>
 
 nmap <Up>    <Nop>
 nmap <Down>  <Nop>
@@ -99,3 +93,22 @@ colorscheme gruvbox
 let g:lightline = {
       \ 'colorscheme': 'gruvbox',
 \ }
+
+" Pane magic
+function! WinMove(key)
+    let t:curwin = winnr()
+    exec "wincmd ".a:key
+    if (t:curwin == winnr())
+        if (match(a:key,'[jk]'))
+            wincmd v
+        else
+            wincmd s
+        endif
+        exec "wincmd ".a:key
+    endif
+endfunction
+
+nnoremap <silent> <C-h> :call WinMove('h')<CR>
+nnoremap <silent> <C-j> :call WinMove('j')<CR>
+nnoremap <silent> <C-k> :call WinMove('k')<CR>
+nnoremap <silent> <C-l> :call WinMove('l')<CR>
