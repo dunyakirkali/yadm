@@ -7,7 +7,8 @@ Plug 'andyl/vim-textobj-elixir'
 Plug 'mhinz/vim-startify'
 Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'
-Plug 'preservim/nerdtree'
+Plug 'justinmk/vim-dirvish'                                    " Directory viewer
+Plug 'kristijanhusak/vim-dirvish-git'                          " Git support for dirvish.vim
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
@@ -26,6 +27,9 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'uarun/vim-protobuf'
 Plug 'junegunn/goyo.vim'
 Plug 'tpope/vim-sleuth'
+Plug 'sbdchd/neoformat'
+Plug 'machakann/vim-highlightedyank'
+Plug 'mhinz/vim-sayonara', { 'on': 'Sayonara' }
 
 call plug#end()
 
@@ -62,7 +66,6 @@ set updatetime=50
 " Mappings
 let mapleader = " "
 
-noremap <leader>t :NERDTreeToggle<CR>
 noremap <leader>f :Files<CR>
 noremap <leader>s :Ag<CR>
 noremap <leader>q :q<cr>
@@ -76,16 +79,8 @@ nmap <Right> <Nop>
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
 
-" NARDTree
-let NERDTreeMapOpenInTab='\r'
-let NERDTreeShowHidden=1
-let NERDTreeShowBookmarks=1
-let NERDTreeChDirMode=0
-let NERDTreeQuitOnOpen=1
-let NERDTreeMouseMode=2
-let NERDTreeShowHidden=1
-let NERDTreeKeepTreeInNewTab=0
-let g:nerdtree_tabs_open_on_gui_startup=0
+" Dirvish
+let g:dirvish_mode = ':sort ,^.*[\/],'
 
 colorscheme gruvbox
 
