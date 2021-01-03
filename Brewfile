@@ -15,7 +15,6 @@ brew "ag"
 brew "mas"
 brew "asdf"           # Manage multiple runtime versions with a single CLI tool
 brew "neovim"         # hyperextensible Vim-based text editor
-brew "fish"           # Finally, a command line shell for the 90s
 brew "httpie"         # HTTPie—aitch-tee-tee-pie—is a command line HTTP client with an intuitive UI, JSON support, syntax highlighting, wget-like downloads, plugins, and more
 brew "browsh"         # Browsh is a fully-modern text-based browser
 brew "ncdu"           # Ncdu is a disk usage analyzer with an ncurses interface
@@ -42,10 +41,8 @@ cask "slack"          # Slack is where work flows
 cask "spotify"        # Spotify is a digital music service that gives you access to millions of songs
 cask "notion"         # Too many tools? Too much chaos? With Notion, all your work is in one place
 cask "firefox"
-# cask "font-inconsolata"
-cask "vimmotion"
+cask "spectacle"
 
 mas "Xcode", id: 497799835
-mas "Magnet", id: 441258766
 mas "1Password 7", id: 1333542190
 mas "Spark", id: 1176895641
