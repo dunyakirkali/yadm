@@ -4,7 +4,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'kana/vim-textobj-user'
 Plug 'andyl/vim-textobj-elixir'
-Plug 'mhinz/vim-startify'
 Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'
 Plug 'justinmk/vim-dirvish'                                    " Directory viewer
@@ -18,10 +17,8 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-sensible'
 Plug 'slashmili/alchemist.vim'
 Plug 'dag/vim-fish'
-Plug 'tpope/vim-fugitive'
 Plug 'wakatime/vim-wakatime'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'uarun/vim-protobuf'
@@ -29,7 +26,10 @@ Plug 'junegunn/goyo.vim'
 Plug 'tpope/vim-sleuth'
 Plug 'sbdchd/neoformat'
 Plug 'machakann/vim-highlightedyank'
-Plug 'mhinz/vim-sayonara', { 'on': 'Sayonara' }
+Plug 'fsharp/vim-fsharp', {
+      \ 'for': 'fsharp',
+      \ 'do':  'make fsautocomplete',
+      \}
 
 call plug#end()
 
