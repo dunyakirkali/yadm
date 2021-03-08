@@ -30,14 +30,15 @@ Plug 'fsharp/vim-fsharp', {
       \ 'for': 'fsharp',
       \ 'do':  'make fsautocomplete',
       \}
+Plug 'gleam-lang/gleam.vim'
 
 call plug#end()
 
 " No backwards compatibility BS
 set nocompatible
 
-" Prefer fish for shell-related tasks
-set shell=/usr/local/bin/fish
+" Prefer zsh for shell-related tasks
+set shell=/bin/zsh
 
 " Enable relative line numbers
 set number relativenumber
