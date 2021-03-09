@@ -1,4 +1,4 @@
-#!/usr/bin/env fish
+#!/usr/bin/env zsh
 
 if test -e ~/Brewfile
 	echo "Updating homebrew bundle"
